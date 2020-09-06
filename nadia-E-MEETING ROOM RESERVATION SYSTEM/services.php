@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Our Services</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<script type="text/javascript" src="engine0/jquery.js"></script>
+	<style type="text/css">
+
+
+
+
+
+#wrapper form{
+	
+	font:18px Georgia ,"Times New Roman", Times, serif;
+	background-image:url(images/images.jpg);
+	
+}
+
+#wrapper form input[type="text"]{
+	border:2px solid darkblue;
+	border-radius:8px;
+	height:20px;
+}
+
+#wrapper form input[type="date"]{
+	border:2px solid darkblue;
+	border-radius:8px;
+	height:25px;
+	margin-left:108px;
+	width:167px;
+}
+
+#wrapper form select{
+	border:2px solid darkblue;
+	border-radius:8px;
+	height:25px;
+	width :169px;
+}
+
+#wrapper form input[type="submit"]{
+	background-color: grey;
+	font-size:40px Georgia ,"Times New Roman", Times, serif;
+	color: white;
+	height:25px;
+	border-radius: 6px;
+}
+
+#wrapper form input[type="reset"]{
+	background-color: grey;
+	font-size:40px Georgia ,"Times New Roman", Times, serif;
+	color: white;
+	height:20px;
+	border-radius: 6px;
+	
+}
+
+#wrapper form input[type="submit"]:hover {
+	cursor:pointer;
+	background-color:lightblue;
+}
+
+#wrapper form input[type="reset"]:hover {
+	cursor:pointer;
+	background-color:lightblue;
+}
+
+
+</style>
+
+
+
+		<link rel="stylesheet" href="services_files/vlb_files0/vlightbox0.css" type="text/css" />
+
+		<link rel="stylesheet" href="services_files/vlb_files0/visuallightbox.css" type="text/css" media="screen" />
+
+
+		
+
+
+		
+		
+		
+		
+		<link rel="stylesheet" href="services_files/vlb_files0/vlightbox0.css" type="text/css" />
+
+		<link rel="stylesheet" href="services_files/vlb_files0/visuallightbox.css" type="text/css" media="screen" />
+
+
+		<script src="services_files/vlb_engine/visuallightbox.js" type="text/javascript"></script>
+
+		
+
+
+		
+
+
+		
+		
+
+
+</head>
+<body>
+	<div id="wrapper"  >
+	
+	
+<?php include("template_header.php");?>
+
+	<div id="content" style="padding-left:30px;">
+		
+			<h1>Our Services</h1>
+
+			<hr>
+    <p> <b>Copy Ori Sdn. Bhd.</b> supplies furniture and stationary to fulfill the equipment in meeting room.
+	Copy Ori supplies a mass production such as seats, table, projector, computer, Wi-Fi and stationary such as marker pen, white board and more. Today, meeting room is larger, demanded, and useful for company to hold a meeting. Advancements in requesting must also be made to meet the demanded requirements of these meetings.Copy Ori product is specifically created to help producers meet 
+	the specification demands of room booking while balancing environmental concerns.
+	While in name Copy Ori SdnBhd would appear to be a newcomer to the meeting room booking’s industry,it is comprised of what were once several independent room booking companies. </p>
+				<h5>* Click on the picture to enlarge</h5>
+
+	
+
+
+	<div id="vlightbox0"style="margin-left: 167px;" >
+
+	<a class="vlightbox0" href="services_files/vlb_images0/images.jpg" title="images"><img src="services_files/vlb_thumbnails0/images.jpg" alt="images"/></a>
+<a class="vlightbox0" href="services_files/vlb_images0/download.jpg" title="download"><img src="services_files/vlb_thumbnails0/download.jpg" alt="download"/></a>
+<a class="vlightbox0" href="services_files/vlb_images0/images_1.jpg" title="images (1)"><img src="services_files/vlb_thumbnails0/images_1.jpg" alt="images (1)"/></a>
+<span class="vlb"><a href="http://visuallightbox.com">lightbox flv gallery</a>by VisualLightBox.com v6.1</span>
+
+	</div>
+
+	<script src="services_files/vlb_engine/vlbdata0.js" type="text/javascript"></script>
+
+
+
+	
+
+			
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+<br>
+<h5>Click on the image below to download Reservation form for manual reservation</h5>
+
+
+
+
+<a href="pdf/reserve.pdf" target="_blank"><img alt="" class="media-image" style=" margin-bottom: 5px; margin-right: 7px;margin-left:184px;" width="400" typeof="foaf:Image" src="images/download.png" /></a>
+
+<br />
+
+
+		</div>
+	
+    
+
+</div>
+<?php include("template_footer2.php");?>
+<?php include("template_footer.php");?>
+</body>
+</html>

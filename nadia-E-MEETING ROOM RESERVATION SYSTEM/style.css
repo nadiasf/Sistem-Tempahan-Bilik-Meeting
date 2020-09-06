@@ -1,0 +1,604 @@
+@charset "utf-8";
+/* 
+Author: NORNADIA BINTI SAFORRUDIN
+Version:1.0.0
+copyright @ 2016
+*
+*Table of contents:
+*
+* 1. Base Styles
+* 2. Layout Styles
+* 3. Menus Styles
+* 4. Features
+* 5. Sidebar Styles
+* 6. Footer Styles
+ */
+ 
+/*----------------------------------------------------*
+* 1.Base Syles
+/*----------------------------------------------------*/
+
+body{
+	font-size: 14px;
+	font-size: 1rem;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image:url(images/6.jpg);
+}
+
+a{
+	text-decoration: none;
+	color: #444444;
+}
+
+hr{
+	border-left: none;
+	margin: 0;
+	border: 0;
+	background: transparent;
+	display: block;
+	border-bottom: 1px solid #efefef;
+	clear: both;
+	margin-bottom: 10px;
+	height: 1px;
+	    margin-right: 23px;
+		background-color:#04ABC6  ;
+		    margin-left: 20px;
+}
+
+strong{
+	font-weight: bold;
+}
+
+ul,
+ol{
+	list-style: none;
+	margin: 0 0 24px 20px;
+}
+
+ul{
+	list-style: disc;
+}
+
+ul li,
+ol li{
+	line-height: 1.8em;
+}
+
+ol{
+	list-style: decimal;
+}
+
+li> ul,
+li> ol{
+	margin: 0 0 0 20px;
+}
+
+blockquote{
+	border-left: 4px solid;
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+
+img{
+	height: auto;
+	max-width: 100%;
+}
+
+h1 ,h2, h3, h4, h5, h6{
+	line-height: 1.3em;
+	padding: 0.5em 0;
+	font-style: normal;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: inherit;
+}
+
+h1{
+	font-size: 2.6em;
+	font-weight: 300;
+	letter-spacing: -0.04em;
+	text-align:right;
+	padding-right:200px;
+	font-family: serif;
+	margin-bottom: 1px;
+	    padding-bottom: 1px;
+}	
+
+h2{
+	font-size: 34px;
+	    margin-left: 19px;
+		    margin-bottom: 1px;
+}
+
+h3{
+	font-size: 22px;
+}
+
+h4{
+	font-size: 20px;
+	 margin-left: 30px;
+}   
+
+h5{
+	font-size: 16px;
+	color:red;
+	    margin-left: 103px;
+}
+
+h6{
+	font-size: 10px;
+}
+
+p{
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 2em;
+	margin: 0 0 1em;
+	padding: 0;
+	vertical-align: top;
+	word-wrap: break-word;
+	text-align: justify;
+	padding-right: 48px;
+	padding-left: 35px;
+	
+}
+
+/*----------------------------------------------------*
+* 2.Layout Styles
+/*----------------------------------------------------*/
+
+
+
+#wrapper{
+	width:69%;
+	margin:auto;
+	
+	background-color:white;
+	
+	display:block;
+	overflow:hidden;                                                                               
+}
+#header{
+display:block;
+}
+#top-nav{
+	width: 100%;
+	margin: 0 auto;
+	height: auto;
+	display: inline-block;
+	color: #ffffff;
+	background-color: #2b3c46;
+
+}
+
+#banner-1{
+	width: 40%;
+	height: auto;
+	float: left;
+	
+}
+
+#banner-2{
+	width: 40%;
+	height: auto;
+	float: left;
+	color: #ffffff;
+}
+
+#top-menu{
+	width: 19%;
+	float: right;
+	padding-top:7px;
+	
+	padding-bottom:7px;
+}
+
+#branding{
+	width: 100%;
+	height:200px;
+	background-color: #27313d;
+	background-image: url(images/header/background-header.jpg);
+}
+
+#access{
+	width: 100%;
+	background-color: #303030;
+	height: 50px;
+	display: block;
+	clear: both;
+	margin: 0 auto;
+	z-index: 99;
+}
+
+
+#main{
+	width:100%;
+	border:1px solid #eaeaea;
+	
+}
+
+
+
+#latest-post{
+	width: 100%;
+	height: auto;
+}
+
+#latest-post .images-post{/* image width 850px and height 250px */ 
+	width: 90%;
+	height: 250px;
+	margin-left: 50px;
+	overflow: hidden;
+}
+
+
+
+
+/*----------------------------------------------------*
+* 3.Menus Styles
+/*----------------------------------------------------*/
+
+/*menu nav */
+
+div.nav{
+	position: relative;
+	-webkit-perspective:1000px;
+	perspective: 1000px;
+}
+
+div.nav input{
+	display:none;
+}
+
+div.nav label.mainlabel, div.nav div.menuflip{
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+div.nav label.mainlabel{
+	width: 200px;
+	font: bold 16px Georgia, "Times New Roman", Times, serif;
+	position: relative;
+	top: 0;
+	display: block;
+	padding-left: 34px;
+	cursor: pointer;
+	color: #ffffff;
+}
+
+div.nav label.mainlabel:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 12px;
+	height: 12px;
+	border: 4px solid #e6402a;
+	border-radius: 30px;
+}
+
+div.nav > label.mainlabel:hover::before{
+	border:4px solid darkred;
+}
+div.nav div.menuflip{
+	position: absolute;
+	margin: 0;
+	top: 0;
+	padding: 4px;
+	background: white;
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+	width: 200px;
+	border: 1px solid gray;
+	-webkit-box-shadow: 2px 2px 15px #b5b5b5;
+	box-shadow: 2px 2px 15px #b5b5b5;
+	border-radius: 10px;
+	background: #eeeeee;
+}
+
+div.nav div.menuflip h5{
+	margin: 0;
+	margin-bottom: 4px;
+	font-size: 14px;
+	padding: 4px 0 0 6px;
+	color: #e6402a;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+div.nav div.menuflip ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+div.nav div.menuflip ul li{
+	border-bottom: 1px inset gray;
+}
+
+div.nav div.menuflip ul li:last-of-type{
+	border-bottom: none;
+}
+
+div.nav div.menuflip ul li a{
+	display:block;
+	color: blue;
+	text-decoration: none;
+	padding: 6px;
+	border-radius: 10px 0 10px;
+	-webkit-transition: none;
+	transition: none;
+}
+
+div.nav div.menuflip ul li a:hover{
+	background: #515151;
+	color: white;
+}
+
+div.nav div.menuflip label.close{
+	position: absolute;
+	right: 15px;
+	top: 8px;
+	padding-top: 0;
+	padding-right: 2px;
+	display: inline-block;
+	color: white;
+	z-index: 1000;
+	cursor: pointer;
+	border-radius: 50px;
+	-webkit-box-shadow: 0 0 5px gray;
+	box-shadow: 0 0 5px gray;
+	width: 20px;
+	height: 20px;
+	background: black;
+	font-size: 16px;
+}
+
+div.nav input:checked ~ label.mainlabel{
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+div.nav input:checked ~ div.menuflip{
+	-webkit-transform: rotateY(0);
+	transform: rotateY(0);
+	    margin-left: -37px;
+}
+
+/*access Menu*/
+
+#access ul{
+	list-style: none;
+	display: table;
+	float: left;
+}
+
+#access ul li{
+	display: block;
+	float: left;
+	width: auto;
+	position: relative;
+}
+
+#access ul li a{
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	display: block;
+	float: left;
+	width: 90px;
+	height: auto;
+	min-height: 37px;
+	margin-top: 10px;
+	padding: 0px 25px 0 25px;
+	font-weight:600;
+	word-wrap: break-all;
+}
+
+#access ul li a:hover{
+	text-decoration: none;
+	color: #e6402a;
+}
+
+#access ul li a:select{
+	color: #e6402a;
+}
+
+#access ul li a:hover,
+#access ul li a:focus{
+	-webkit-transition: background-color .2s ease;
+	-moz-transition: background-color .2s ease;
+	-ms-transition: background-color .2s ease;
+	-o-transition: background-color .2s ease;
+	transition: background-color .2s ease;
+}
+
+#access > ul>  li >  a:after{
+	content:" | ";
+	color: white;
+	opacity: 0.15;
+	width: 1px;
+	font-size: 1.1em;
+	position: absolute;
+	top: 10px;
+	right: 3px;
+}
+
+/*----------------------------------------------------*
+* 4.Features
+/*----------------------------------------------------*/
+
+/*Site title and Site tagline*/
+
+.site-title{
+	color: white;
+	width: 60%;
+	margin-left: 300px;
+	padding-top: 30px;
+}
+
+.site-tagline{
+	color: white;
+	width: 60%;
+	margin-left: 300px;
+	margin-top: -20px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/*Post title */
+
+#latest-post h4{
+	margin-left:250px;
+	color: #181e46;
+	font-style: italic;
+}
+
+#latest-post h4 a{
+	color: #181e46;
+}
+
+#latest-post h4 a:hover{
+	color: blue;
+}
+
+#latest-post h6{
+	margin-left: 200px;
+	font-weight: lighter;
+	font-family: "Times New Roman", Times, serif;
+}
+#latest-post p{
+	margin-left: 100px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+#container p{
+margin-left: 100px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+#container h4{
+margin-left: 100px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+#container iframe{
+margin-left: 100px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+#container{
+display:block;
+width:69%;
+
+}
+
+/*----------------------------------------------------*
+* 5.Sidebar Styles
+/*----------------------------------------------------*/
+
+
+#sidebar .search-widget{
+	width: 100%;
+	height: 150px;
+	border: 5px solid #eaeaea;
+	border-radius: 5px;
+}
+
+#sidebar .search-widget form{
+	margin-top:40px;
+	width: 90%;
+	margin-left: 10px;
+	float:right;
+}
+
+#sidebar .search-widget #search{
+	width: 95%;
+	height: 35px;
+	border-radius: 5px;
+}
+
+#sidebar .search-widget input[type="submit"]{
+	border: 1px solid #e6402a;
+	margin-top:10px;
+	width: 75px;
+	height: 30px;
+	color: white;
+	background-color: #e6402a;
+	border-radius:5px;
+	font-size: 12px;
+	font-family: "Times New Roman", Times, serif;
+	
+}
+
+#sidebar .search-widget input[type="submit"]:hover{
+	cursor: pointer;
+	background-color: #999999;
+	border: 1px solid #999999;
+}
+
+/*----------------------------------------------------*
+* 6.Footer Styles
+/*----------------------------------------------------*/
+
+#footer{
+	width: 100%;
+}
+
+#site-info{
+	width: 100%;
+	height: 90px;
+	margin:auto;
+	margin-top: 0 auto;
+	background-color: #111111;
+	color: white;
+	font-size: 12px;
+	font-family: "Times New Roman", Times, serif;
+	text-align:center;}
+
+	
+	#site-info2{
+	width: 98%;
+	padding-left:20px;
+	height: 250px;
+	margin:auto;
+	padding-top:1px;
+	    margin-top: -109px;
+	background-color: #0d0d0d;
+	color: white;
+	font-size: 12px;
+	font-family: "Times New Roman", Times, serif;
+	text-align:Left;}
+	
+
+	
+	
+#site-info p{
+	margin-left: 450px;
+	padding-top: 33px;
+}
+
+
+
+#footer2{
+	
+		background-color:black;
+		width: 100%;
+		margin:auto;
+		opacity:0.8;
+		margin-top:110px;
+}
+#site-info2 ul li a{
+	color:white;
+	opacity:1;
+	font-size: 12px;
+	font-weight:bold;
+}
+#site-info2 ul li a:hover{
+	text-decoration:underline;
+	
+}
